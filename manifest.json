@@ -1,0 +1,30 @@
+{
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArNbW+80WaO+UYytZvOH8QUNsetRrXCZGW269V7QSUjS2bz2Wz+luQ6CkawHQPSFbkhi4O/ku23YmUOGizHkc68hhv5MtgKV3Rg4+hJYLuI2fHuzI8S8LTIZp3DLELmkfORRC6YKQJkYTizZcNNSzfDwGOJANMXbbz4qiWXSLWxJ4DT3Hb5u2SS0J6BV7YOcu1Kw+XmkZNyL1ujBKtxaMocfOGqxvEUQt87SrrnW12XYj2p9eJoF9G6PlQ8ttV+dw8kJJ+358GefecnvNs90Df8n2uHwYfGCiSw1jvWhsgcBdqqqOmP0zVEi1a3uFE2z54p2j1DY525vaalRkrGpciwIDAQAB",
+  "name": "getDisplayMediaZoom",
+  "version": "1.0.0",
+  "minimum_chrome_version": "10.0",
+  "icons": {
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
+  "description": "getDisplayMedia with zoom when you move your cursor in circles",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "js/inject.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "permissions": [],
+  "manifest_version": 3,
+  "web_accessible_resources": [{
+        "resources": ["js/*"],
+        "matches": ["<all_urls>"]
+      }]
+}
