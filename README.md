@@ -1,6 +1,6 @@
 # getDisplayMediaZoom chrome extension
 
-Forked from ![https://github.com/spite/virtual-webcam](virtual-webcam)
+Forked from [https://github.com/spite/virtual-webcam](virtual-webcam)
 
 To use (Chromium):
 - download or clone the repo
